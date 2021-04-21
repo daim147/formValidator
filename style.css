@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a9b0b6;
+}
+.container {
+  width: 30rem;
+  height: 40rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px 10px rgba(0,0,0,0.4);
+}
+/* Form */
+form{
+  width: 90%;
+}
+.form-group{
+  height: 4rem ;
+}
+label{
+  position: relative;
+  bottom: 3px;
+}
+
+input{
+  width: 100%;
+  height: 1.5rem;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: border-box;
+  transition: all .3s;
+}
+input:valid{
+  border: 2px solid green;
+}
+input:invalid{
+  border: 2px solid red;
+}
+
+button{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: 20px;
+  margin-top: 5px;
+  transition: all .3s;
+
+}
+button:focus{
+  outline: none;
+}
+button:hover{
+  filter: brightness(200%);
+  background-color: rgb(27, 27, 27);
+}
+.message-container{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: all .3s;
+
+}
+.message-container:hover{
+  color: white;
+  background-color: black;
+
+}
